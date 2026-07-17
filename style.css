@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(112, 70, 3);
+  padding: 1rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a:hover {
+  opacity: 0.7;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #e8c7c7;
+}
+header nav ul li a:hover {
+  font-size: 2rem;
+  color: rgb(230, 189, 189);
+}
+
+header nav button {
+  padding: 10px;
+  background-color: #20ad96;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header nav button:hover {
+  opacity: 0.9;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-basis: 50%;
+}
+
+.section-div-1 {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  max-width: 400px;
+  flex-basis: 50%;
+}
+.section-div-1 h1 {
+  font-size: 2rem;
+}
+
+.section-div-1 p {
+  color: #2f2f2f;
+  line-height: 30px;
+  font-size: 1.2rem;
+}
+
+.section-div-1 button {
+  text-align: center;
+  background-color: #20ad96;
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+  width: 272px;
+  height: 70px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.section-div-2 {
+  width: 500px;
+  height: auto;
+}
+
+.section-div-2 img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  padding-top: 30px;
+}
+
+span {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+p span a {
+  text-decoration: none;
+  color: #20ad96;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  header {
+    padding-right: 15px;
+    overflow: hidden;
+  }
+  nav ul a {
+    display: none;
+  }
+
+  div button {
+    display: none;
+  }
+
+  .menu-btn {
+    background-color: #0f594e;
+    color: #fff;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    margin-top: 1rem;
+    /* max-width: 700px;
+    height: auto; */
+  }
+  .menu-btn {
+    display: block;
+  }
+
+  .section-div-2 {
+    max-width: 300px;
+    height: auto;
+  }
+
+  .section-div-2 img {
+    width: 100%;
+  }
+}
