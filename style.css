@@ -73,6 +73,7 @@ section {
   flex-direction: column;
   max-width: 400px;
   flex-basis: 50%;
+  /* border: 5px solid #000; */
 }
 .section-div-1 h1 {
   font-size: 2rem;
@@ -99,13 +100,36 @@ section {
 .section-div-2 {
   width: 500px;
   height: auto;
+  position: relative;
+  margin: 40px;
+  /* border: 5px solid #dc1818; */
 }
 
-.section-div-2 img {
-  object-fit: cover;
-  object-position: center;
+.hero-circle {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-circle img {
   width: 100%;
-  padding-top: 30px;
+  height: 100%;
+  object-fit: cover;
+  /* border: 5px solid #000; */
+}
+.img--1 {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  top: -10px;
+  left: -20px;
+}
+
+.img--2 {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  bottom: -10px;
+  right: -20px;
 }
 
 span {
